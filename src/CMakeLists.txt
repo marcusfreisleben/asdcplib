@@ -70,7 +70,7 @@ endif()
 
 # header for deployment (install target)
 
-set(asdcp_deploy_header AS_DCP.h AS_DCP_JXS.h PCMParserList.h AS_DCP_internal.h KM_error.h KM_fileio.h KM_util.h KM_memio.h KM_tai.h KM_platform.h KM_log.h KM_mutex.h)
+set(asdcp_deploy_header AS_DCP.h AS_DCP_JXS.h JXS.h PCMParserList.h AS_DCP_internal.h KM_error.h KM_fileio.h KM_util.h KM_memio.h KM_tai.h KM_platform.h KM_log.h KM_mutex.h)
 if (WIN32)
 	list(APPEND asdcp_deploy_header dirent_win.h)
 endif()
@@ -89,7 +89,7 @@ set(as02_src h__02_Reader.cpp h__02_Writer.cpp AS_02_ISXD.cpp AS_02_JP2K.cpp
 AS_02_JXS.cpp AS_02_PCM.cpp ST2052_TextParser.cpp AS_02_TimedText.cpp AS_02_ACES.cpp ACES_Codestream_Parser.cpp ACES_Sequence_Parser.cpp ACES.cpp AS_02_IAB.cpp ST2052_TextParser.cpp)
 
 # header for deployment (install target)
-set(as02_deploy_header AS_02.h AS_02_JXS.h Metadata.h MXF.h MXFTypes.h KLV.h MDD.h AS_02_ACES.h ACES.h AS_02_IAB.h AS_02_internal.h)
+set(as02_deploy_header AS_02.h AS_02_JXS.h JXS.h Metadata.h MXF.h MXFTypes.h KLV.h MDD.h AS_02_ACES.h ACES.h AS_02_IAB.h AS_02_internal.h)
 
 # header
 set(as02_src ${as02_src} AS_02.h AS_02_JXS.h AS_02_internal.h AS_02_ACES.h ACES.h AS_02_IAB.h AS_02_PHDR.h)
